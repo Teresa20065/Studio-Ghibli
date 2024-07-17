@@ -1,0 +1,207 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*centra el eje horizontal*/
+    align-items: center;
+
+
+
+
+}
+/*inicio del header*/
+.header{
+    width: 80%;
+    height: 4em;
+    background-color: rgb(250, 118, 103);
+    display: flex;
+    flex-direction: row;
+    /*centramos el contendo*/
+    justify-content: center;
+    /*Centramos el eje transversal*/
+    align-items: center;    
+}
+.logo{
+    object-fit: cover;
+    height: 100% ;
+    display: flex;
+    flex-direction: row;
+    /*centramos el contendo*/
+    justify-content: center;
+    /*Centramos el eje transversal*/
+    align-items: center;  
+}
+
+
+/*inicio del nav*/
+
+.nav{
+    width: 80%;
+    height: 3em;
+    background-color: rgb(159, 103, 250);
+}
+.barnav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row ;
+    /*justify-content: space-between;*/
+    justify-content: center;
+    align-items: center;
+
+
+}
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:1em;
+
+}
+/*añadimos un hover para animar un poco*/
+.menu:hover{
+    background-color: rgb(229, 235, 231);
+    /*letra*/
+    color: rgb(36, 35, 38);
+    /*tiempo*/
+    transition: 0.5s;
+
+
+}
+
+
+/*Inicio del banner*/
+.banner{
+    width: 80%;
+    height: calc(100vh - 7em);
+    background-color: rgb(235, 103, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.title-banner{
+    font-size: 3em;
+
+}
+.btn-banner{
+    background-color: brown;
+    text-decoration: none;
+    padding:1em 4em;
+    color: aliceblue;
+    font-size: 1.25em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+
+
+}
+.btn-banner:hover{
+    background-color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    
+
+
+}
+
+/*Inicio del articulo*/
+.article{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(40,234,101);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tittle-article{
+    font-size: 2em;
+}
+.paragraph-article{
+    font-size: 1.25em;
+    width: 80%;
+    /*para que el texto este bien alineado y no salido*/
+    text-align: justify;
+    margin: 2em;
+}
+.galery{
+    width: 80%;
+    height: 40%;
+    background-color: rgb(173, 105, 236);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.box-galery{
+    background-color: aquamarine;
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.box-img{
+    width: 100%;
+    height: 60%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.box-img img{
+    object-fit: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-img{
+    background-color: brown;
+    text-decoration: none;
+    padding: 0.5em 3em;
+    color: azure;
+    font-size: 1em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+
+}
+
+
+/*Inicio de footer*/ 
+.footer{
+    width: 80%;
+    height: 4em;
+    background-color: rgb(246, 37, 183);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.text-footer{
+   font-size: 1em; 
+}
