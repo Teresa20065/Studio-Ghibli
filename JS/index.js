@@ -8,18 +8,31 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(data => {
         console.log('Data from API:', data); // Verifica los datos recibidos
-        data.results.forEach(character => {
-          const characterCard = document.createElement('div');
-          characterCard.classList.add('character-card');
-          characterCard.innerHTML = `
-            <img src="${character.image}" alt="${character.name}">
-            <h2>${character.name}</h2>
-            <p>Status: ${character.status}</p>
-            <p>Species: ${character.species}</p>
-            <p>Gender: ${character.gender}</p>
+        let row;
+
+        data.results.forEach((character,index) => {
+            if(index % 3=== 0){
+                row = document.createElement('div');
+                row.classList.add('row', 'mb-4'); 
+                characterContainer.appendChild(row);
+
+            }
+
+            const characterCard = document.createElement('div');
+            characterCard.classList.add('col-md-4'); // 4 columnas por cada fila (3 items por fila)
+            characterCard.innerHTML = `
+              <div class="card">
+                <img src="${character.image}" class="card-img-top" alt="${character.name}">
+                <div class="card-body">
+                  <h2 class="card-title">${character.name}</h2>
+                  <p class="card-text">Status: ${character.status}</p>
+                  <p class="card-text">Species: ${character.species}</p>
+                  <p class="card-text">Gender: ${character.gender}</p>
+                </div>
+              </div>
           `;
   
-          characterContainer.appendChild(characterCard);
+          row.appendChild(characterCard);
         });
       })
       .catch(error => {

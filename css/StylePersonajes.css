@@ -4,6 +4,92 @@
     box-sizing: border-box;
 
 }
+
+ body{
+     width: 100%;
+     height: 100%;
+     background-color: aqua;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     /*centra el eje horizontal*/
+     align-items: center;
+ 
+ 
+ 
+ 
+ }
+ /*/////*/
+ a{
+     text-decoration: none;
+     color:white;
+ }
+ /*inicio del header*/
+ .header{
+     width: 80%;
+     height: 4em;
+     background-color: rgb(250, 118, 103);
+     display: flex;
+     flex-direction: row;
+     /*centramos el contendo*/
+     justify-content: center;
+     /*Centramos el eje transversal*/
+     align-items: center;    
+ }
+ .logo{
+     object-fit: cover;
+     height: 100% ;
+     display: flex;
+     flex-direction: row;
+     /*centramos el contendo*/
+     justify-content: center;
+     /*Centramos el eje transversal*/
+     align-items: center;  
+ }
+ 
+ 
+ /*inicio del nav*/
+ 
+ .nav{
+     width: 80%;
+     height: 3em;
+     background-color: rgb(159, 103, 250);
+ }
+ .barnav{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction:row ;
+     /*justify-content: space-between;*/
+     justify-content: center;
+     align-items: center;
+ 
+ 
+ }
+ 
+ .menu{
+     width: 20%;
+     height: 100%;
+     background-color: black;
+     color: aliceblue;
+     text-decoration: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin:1em;
+ 
+ }
+ /*añadimos un hover para animar un poco*/
+ .menu:hover{
+     background-color: rgb(229, 235, 231);
+     /*letra*/
+     color: rgb(36, 35, 38);
+     /*tiempo*/
+     transition: 0.5s;
+ 
+ 
+ }
 main{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
