@@ -21,7 +21,22 @@
   </nav>
   <!--experimento-->
   <main>
+    <!--Buscador-->
+    <div class="container my-4">
+      <h1>Buscar Personajes</h1>
+      <div class="input-group mb-3">
+        <input type="text" id="search-input" class="form-control" placeholder="Buscar personajes...">
+        <div class="input-group-append">
+          <button id="search-button" class="btn btn-primary" type="button">Buscar</button>
+        </div>
+      </div>
+    </div>
+    <!-------fin de buscador------------------------->
+
     <div id="character-container" class="character-container"></div>
+    <div class="text-center my-4">
+      <button id="load-more-button" class="btn btn-primary">Cargar más</button>
+    </div>
   </main>
   <script src="JS/index.js"></script>
   <footer class="footer">
