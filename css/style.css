@@ -6,7 +6,7 @@
 body{
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -113,23 +113,21 @@ a{
     height: 100%;
   }
   
-  .carousel-item {
+.carousel-item {
     width: 100%;
     height: calc(100vh - 7em);
   }
-  .carousel-item active{
+.carousel-item active{
     width: 100%;
     height: calc(100vh - 7em);
   }
-  
-  
-  .carousel-image {
+.carousel-image {
     width: 100%;
     height: 100%;
    /* height: 100%;*/
    /*object-fit: cover;*/
   }
-  .d-block w-100{   
+.d-block w-100{   
     width: 100%;
     height: calc(100vh - 7em);   
 
